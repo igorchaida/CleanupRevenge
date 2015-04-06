@@ -22,8 +22,6 @@
     [self addChild:myLabel];
 }
 
-//lkNSKLJLDKJADLKJDKDS
-
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
