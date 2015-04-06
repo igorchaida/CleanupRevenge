@@ -1,5 +1,5 @@
 //
-//  Waste.h
+//  Trash.h
 //  CleanupRevenge
 //
 //  Created by Igor de Almeida on 06/04/15.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Waste : NSObject
+@interface Trash : NSObject
 
 @end

@@ -19,13 +19,13 @@
 		355523731AD30099003992F5 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523721AD30099003992F5 /* Fish.m */; };
 		355523761AD300CC003992F5 /* FishHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523751AD300CC003992F5 /* FishHook.m */; };
 		355523791AD30174003992F5 /* Shark.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523781AD30174003992F5 /* Shark.m */; };
-		3555237C1AD301AF003992F5 /* Waste.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555237B1AD301AF003992F5 /* Waste.m */; };
 		355523841AD30282003992F5 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523831AD30282003992F5 /* SoundManager.m */; };
 		355523881AD30731003992F5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523871AD30731003992F5 /* MenuViewController.m */; };
 		3555238B1AD30D8A003992F5 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555238A1AD30D8A003992F5 /* ConfigViewController.m */; };
 		3555238E1AD30DAA003992F5 /* GaleriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555238D1AD30DAA003992F5 /* GaleriaViewController.m */; };
 		355523911AD313B3003992F5 /* HistoricoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523901AD313B3003992F5 /* HistoricoViewController.m */; };
 		355523941AD31555003992F5 /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523931AD31555003992F5 /* PauseViewController.m */; };
+		3555239E1AD31E4A003992F5 /* Trash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555239D1AD31E4A003992F5 /* Trash.m */; };
 		35FA93021AD2FCAF003F80C1 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA93011AD2FCAF003F80C1 /* Joystick.m */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +62,6 @@
 		355523751AD300CC003992F5 /* FishHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishHook.m; sourceTree = "<group>"; };
 		355523771AD30174003992F5 /* Shark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shark.h; sourceTree = "<group>"; };
 		355523781AD30174003992F5 /* Shark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shark.m; sourceTree = "<group>"; };
-		3555237A1AD301AF003992F5 /* Waste.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waste.h; sourceTree = "<group>"; };
-		3555237B1AD301AF003992F5 /* Waste.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waste.m; sourceTree = "<group>"; };
 		355523821AD30282003992F5 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
 		355523831AD30282003992F5 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
 		355523861AD30731003992F5 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
@@ -76,6 +74,8 @@
 		355523901AD313B3003992F5 /* HistoricoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricoViewController.m; sourceTree = "<group>"; };
 		355523921AD31555003992F5 /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
 		355523931AD31555003992F5 /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
+		3555239C1AD31E4A003992F5 /* Trash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trash.h; sourceTree = "<group>"; };
+		3555239D1AD31E4A003992F5 /* Trash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trash.m; sourceTree = "<group>"; };
 		35FA93001AD2FCAF003F80C1 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		35FA93011AD2FCAF003F80C1 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +119,7 @@
 		3545C0D61AD2F80C00E6093D /* CleanupRevenge */ = {
 			isa = PBXGroup;
 			children = (
+				3555239A1AD31DB1003992F5 /* Imagens */,
 				355523991AD31A93003992F5 /* Pause */,
 				355523981AD31A84003992F5 /* Historico */,
 				355523971AD31A5B003992F5 /* Galeria */,
@@ -186,15 +187,6 @@
 			name = Shark;
 			sourceTree = "<group>";
 		};
-		3555237E1AD301CF003992F5 /* Waste */ = {
-			isa = PBXGroup;
-			children = (
-				3555237A1AD301AF003992F5 /* Waste.h */,
-				3555237B1AD301AF003992F5 /* Waste.m */,
-			);
-			name = Waste;
-			sourceTree = "<group>";
-		};
 		3555237F1AD301D6003992F5 /* Fish */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,9 +208,9 @@
 		355523811AD30209003992F5 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				3555239B1AD31E30003992F5 /* Trash */,
 				355523801AD301E1003992F5 /* FishHook */,
 				3555237F1AD301D6003992F5 /* Fish */,
-				3555237E1AD301CF003992F5 /* Waste */,
 				3555237D1AD301C8003992F5 /* Shark */,
 			);
 			name = Game;
@@ -276,6 +268,22 @@
 				355523931AD31555003992F5 /* PauseViewController.m */,
 			);
 			name = Pause;
+			sourceTree = "<group>";
+		};
+		3555239A1AD31DB1003992F5 /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Imagens;
+			sourceTree = "<group>";
+		};
+		3555239B1AD31E30003992F5 /* Trash */ = {
+			isa = PBXGroup;
+			children = (
+				3555239C1AD31E4A003992F5 /* Trash.h */,
+				3555239D1AD31E4A003992F5 /* Trash.m */,
+			);
+			name = Trash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +387,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3555237C1AD301AF003992F5 /* Waste.m in Sources */,
 				35FA93021AD2FCAF003F80C1 /* Joystick.m in Sources */,
 				3545C0E51AD2F80C00E6093D /* GameViewController.m in Sources */,
 				355523841AD30282003992F5 /* SoundManager.m in Sources */,
@@ -392,6 +399,7 @@
 				355523941AD31555003992F5 /* PauseViewController.m in Sources */,
 				3555238E1AD30DAA003992F5 /* GaleriaViewController.m in Sources */,
 				3555238B1AD30D8A003992F5 /* ConfigViewController.m in Sources */,
+				3555239E1AD31E4A003992F5 /* Trash.m in Sources */,
 				355523761AD300CC003992F5 /* FishHook.m in Sources */,
 				355523911AD313B3003992F5 /* HistoricoViewController.m in Sources */,
 			);
