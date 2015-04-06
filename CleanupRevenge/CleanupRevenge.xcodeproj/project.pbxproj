@@ -16,6 +16,7 @@
 		3545C0EA1AD2F80C00E6093D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3545C0E91AD2F80C00E6093D /* Images.xcassets */; };
 		3545C0ED1AD2F80C00E6093D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3545C0EB1AD2F80C00E6093D /* LaunchScreen.xib */; };
 		3545C0F91AD2F80C00E6093D /* CleanupRevengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */; };
+		35FA93021AD2FCAF003F80C1 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA93011AD2FCAF003F80C1 /* Joystick.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		3545C0F21AD2F80C00E6093D /* CleanupRevengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanupRevengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3545C0F71AD2F80C00E6093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CleanupRevengeTests.m; sourceTree = "<group>"; };
+		35FA93001AD2FCAF003F80C1 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		35FA93011AD2FCAF003F80C1 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		3545C0D61AD2F80C00E6093D /* CleanupRevenge */ = {
 			isa = PBXGroup;
 			children = (
+				355523701AD2FD16003992F5 /* Joystick */,
 				3545C0DB1AD2F80C00E6093D /* AppDelegate.h */,
 				3545C0DC1AD2F80C00E6093D /* AppDelegate.m */,
 				3545C0DE1AD2F80C00E6093D /* GameScene.h */,
@@ -125,6 +129,15 @@
 				3545C0F71AD2F80C00E6093D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		355523701AD2FD16003992F5 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				35FA93001AD2FCAF003F80C1 /* Joystick.h */,
+				35FA93011AD2FCAF003F80C1 /* Joystick.m */,
+			);
+			name = Joystick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FA93021AD2FCAF003F80C1 /* Joystick.m in Sources */,
 				3545C0E51AD2F80C00E6093D /* GameViewController.m in Sources */,
 				3545C0DD1AD2F80C00E6093D /* AppDelegate.m in Sources */,
 				3545C0E01AD2F80C00E6093D /* GameScene.m in Sources */,
@@ -422,6 +436,7 @@
 				3545C0FE1AD2F80C00E6093D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3545C0FF1AD2F80C00E6093D /* Build configuration list for PBXNativeTarget "CleanupRevengeTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +445,7 @@
 				3545C1011AD2F80C00E6093D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
