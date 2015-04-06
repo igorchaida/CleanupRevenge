@@ -8,13 +8,29 @@
 
 #import "GameScene.h"
 
+@interface GameScene ()
+
+@property (nonatomic,strong)SKSpriteNode *background;
+
+
+@end
+
 @implementation GameScene
+
+
 
 -(void)didMoveToView:(SKView *)view {
     /* Setup your scene here */
     SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     
-    myLabel.text = @"Hello, World!";
+    _background = [SKSpriteNode spriteNodeWithImageNamed:@"FundoTEST.png"];
+    [_background setName:@"background"];
+    [_background setAnchorPoint:CGPointZero];
+//    background.size.height = 337;
+    
+    [self addChild:_background];
+    
+    myLabel.text = @"TESTE1";
     myLabel.fontSize = 65;
     myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                    CGRectGetMidY(self.frame));
@@ -28,7 +44,7 @@
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Peixe1"];
         
         sprite.xScale = 0.5;
         sprite.yScale = 0.5;

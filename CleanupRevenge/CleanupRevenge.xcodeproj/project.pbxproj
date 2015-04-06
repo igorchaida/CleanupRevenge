@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3531B0E21AD3201200DC088F /* Bota.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DC1AD3201200DC088F /* Bota.png */; };
+		3531B0E31AD3201200DC088F /* FundoTEST.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DD1AD3201200DC088F /* FundoTEST.png */; };
+		3531B0E41AD3201200DC088F /* Garrafa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DE1AD3201200DC088F /* Garrafa.png */; };
+		3531B0E51AD3201200DC088F /* Lata.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DF1AD3201200DC088F /* Lata.png */; };
+		3531B0E61AD3201200DC088F /* Peixe1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0E01AD3201200DC088F /* Peixe1.png */; };
+		3531B0E71AD3201200DC088F /* Sacola.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0E11AD3201200DC088F /* Sacola.png */; };
 		3545C0DA1AD2F80C00E6093D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0D91AD2F80C00E6093D /* main.m */; };
 		3545C0DD1AD2F80C00E6093D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0DC1AD2F80C00E6093D /* AppDelegate.m */; };
 		3545C0E01AD2F80C00E6093D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0DF1AD2F80C00E6093D /* GameScene.m */; };
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3531B0DC1AD3201200DC088F /* Bota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bota.png; sourceTree = "<group>"; };
+		3531B0DD1AD3201200DC088F /* FundoTEST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FundoTEST.png; sourceTree = "<group>"; };
+		3531B0DE1AD3201200DC088F /* Garrafa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Garrafa.png; sourceTree = "<group>"; };
+		3531B0DF1AD3201200DC088F /* Lata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lata.png; sourceTree = "<group>"; };
+		3531B0E01AD3201200DC088F /* Peixe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peixe1.png; sourceTree = "<group>"; };
+		3531B0E11AD3201200DC088F /* Sacola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sacola.png; sourceTree = "<group>"; };
 		3545C0D41AD2F80C00E6093D /* CleanupRevenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanupRevenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3545C0D81AD2F80C00E6093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3545C0D91AD2F80C00E6093D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -273,6 +285,12 @@
 		3555239A1AD31DB1003992F5 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				3531B0DC1AD3201200DC088F /* Bota.png */,
+				3531B0DD1AD3201200DC088F /* FundoTEST.png */,
+				3531B0DE1AD3201200DC088F /* Garrafa.png */,
+				3531B0DF1AD3201200DC088F /* Lata.png */,
+				3531B0E01AD3201200DC088F /* Peixe1.png */,
+				3531B0E11AD3201200DC088F /* Sacola.png */,
 			);
 			name = Imagens;
 			sourceTree = "<group>";
@@ -366,9 +384,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3531B0E31AD3201200DC088F /* FundoTEST.png in Resources */,
 				3545C0ED1AD2F80C00E6093D /* LaunchScreen.xib in Resources */,
 				3545C0EA1AD2F80C00E6093D /* Images.xcassets in Resources */,
+				3531B0E41AD3201200DC088F /* Garrafa.png in Resources */,
+				3531B0E21AD3201200DC088F /* Bota.png in Resources */,
+				3531B0E51AD3201200DC088F /* Lata.png in Resources */,
 				3545C0E21AD2F80C00E6093D /* GameScene.sks in Resources */,
+				3531B0E61AD3201200DC088F /* Peixe1.png in Resources */,
+				3531B0E71AD3201200DC088F /* Sacola.png in Resources */,
 				3545C0E81AD2F80C00E6093D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
