@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3531B0E21AD3201200DC088F /* Bota.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DC1AD3201200DC088F /* Bota.png */; };
-		3531B0E31AD3201200DC088F /* FundoTEST.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DD1AD3201200DC088F /* FundoTEST.png */; };
 		3531B0E41AD3201200DC088F /* Garrafa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DE1AD3201200DC088F /* Garrafa.png */; };
 		3531B0E51AD3201200DC088F /* Lata.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DF1AD3201200DC088F /* Lata.png */; };
 		3531B0E61AD3201200DC088F /* Peixe1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0E01AD3201200DC088F /* Peixe1.png */; };
@@ -32,6 +31,8 @@
 		355523911AD313B3003992F5 /* HistoricoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523901AD313B3003992F5 /* HistoricoViewController.m */; };
 		355523941AD31555003992F5 /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523931AD31555003992F5 /* PauseViewController.m */; };
 		3555239E1AD31E4A003992F5 /* Trash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555239D1AD31E4A003992F5 /* Trash.m */; };
+		35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6FDCD1AD325120049A354 /* FundoTEST.png */; };
+		35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6FDD31AD32E130049A354 /* FundoTEST-2.png */; };
 		35FA93021AD2FCAF003F80C1 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FA93011AD2FCAF003F80C1 /* Joystick.m */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		3531B0DC1AD3201200DC088F /* Bota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bota.png; sourceTree = "<group>"; };
-		3531B0DD1AD3201200DC088F /* FundoTEST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FundoTEST.png; sourceTree = "<group>"; };
 		3531B0DE1AD3201200DC088F /* Garrafa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Garrafa.png; sourceTree = "<group>"; };
 		3531B0DF1AD3201200DC088F /* Lata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lata.png; sourceTree = "<group>"; };
 		3531B0E01AD3201200DC088F /* Peixe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peixe1.png; sourceTree = "<group>"; };
@@ -88,6 +88,8 @@
 		355523931AD31555003992F5 /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
 		3555239C1AD31E4A003992F5 /* Trash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trash.h; sourceTree = "<group>"; };
 		3555239D1AD31E4A003992F5 /* Trash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trash.m; sourceTree = "<group>"; };
+		35B6FDCD1AD325120049A354 /* FundoTEST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FundoTEST.png; sourceTree = "<group>"; };
+		35B6FDD31AD32E130049A354 /* FundoTEST-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FundoTEST-2.png"; sourceTree = "<group>"; };
 		35FA93001AD2FCAF003F80C1 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		35FA93011AD2FCAF003F80C1 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,7 +288,8 @@
 			isa = PBXGroup;
 			children = (
 				3531B0DC1AD3201200DC088F /* Bota.png */,
-				3531B0DD1AD3201200DC088F /* FundoTEST.png */,
+				35B6FDCD1AD325120049A354 /* FundoTEST.png */,
+				35B6FDD31AD32E130049A354 /* FundoTEST-2.png */,
 				3531B0DE1AD3201200DC088F /* Garrafa.png */,
 				3531B0DF1AD3201200DC088F /* Lata.png */,
 				3531B0E01AD3201200DC088F /* Peixe1.png */,
@@ -384,11 +387,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3531B0E31AD3201200DC088F /* FundoTEST.png in Resources */,
 				3545C0ED1AD2F80C00E6093D /* LaunchScreen.xib in Resources */,
 				3545C0EA1AD2F80C00E6093D /* Images.xcassets in Resources */,
 				3531B0E41AD3201200DC088F /* Garrafa.png in Resources */,
 				3531B0E21AD3201200DC088F /* Bota.png in Resources */,
+				35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */,
+				35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */,
 				3531B0E51AD3201200DC088F /* Lata.png in Resources */,
 				3545C0E21AD2F80C00E6093D /* GameScene.sks in Resources */,
 				3531B0E61AD3201200DC088F /* Peixe1.png in Resources */,

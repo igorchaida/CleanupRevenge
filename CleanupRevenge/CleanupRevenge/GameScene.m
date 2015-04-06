@@ -23,11 +23,9 @@
     /* Setup your scene here */
     SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
     
-    _background = [SKSpriteNode spriteNodeWithImageNamed:@"FundoTEST.png"];
+    _background = [SKSpriteNode spriteNodeWithImageNamed:@"FundoTEST-2.png"];
     [_background setName:@"background"];
     [_background setAnchorPoint:CGPointZero];
-//    background.size.height = 337;
-    
     [self addChild:_background];
     
     myLabel.text = @"TESTE1";
@@ -40,6 +38,8 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    
+
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
