@@ -16,6 +16,11 @@
 		3544D7421AD5A514001BC232 /* JCJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3544D7401AD5A514001BC232 /* JCJoystick.m */; };
 		3544D7451AD5A599001BC232 /* redStick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D7431AD5A599001BC232 /* redStick.png */; };
 		3544D7461AD5A599001BC232 /* stickbase.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D7441AD5A599001BC232 /* stickbase.png */; };
+		3544D74C1AD5A884001BC232 /* Rope.m in Sources */ = {isa = PBXBuildFile; fileRef = 3544D74B1AD5A884001BC232 /* Rope.m */; };
+		3544D7501AD5A8D6001BC232 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D74D1AD5A8D6001BC232 /* Ball.png */; };
+		3544D7511AD5A8D6001BC232 /* Branch.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D74E1AD5A8D6001BC232 /* Branch.png */; };
+		3544D7521AD5A8D6001BC232 /* rope_ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D74F1AD5A8D6001BC232 /* rope_ring.png */; };
+		3544D7541AD5B105001BC232 /* TelaInicial.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D7531AD5B105001BC232 /* TelaInicial.png */; };
 		3545C0DA1AD2F80C00E6093D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0D91AD2F80C00E6093D /* main.m */; };
 		3545C0DD1AD2F80C00E6093D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0DC1AD2F80C00E6093D /* AppDelegate.m */; };
 		3545C0E01AD2F80C00E6093D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0DF1AD2F80C00E6093D /* GameScene.m */; };
@@ -26,7 +31,6 @@
 		3545C0ED1AD2F80C00E6093D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3545C0EB1AD2F80C00E6093D /* LaunchScreen.xib */; };
 		3545C0F91AD2F80C00E6093D /* CleanupRevengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */; };
 		355523731AD30099003992F5 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523721AD30099003992F5 /* Fish.m */; };
-		355523761AD300CC003992F5 /* FishHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523751AD300CC003992F5 /* FishHook.m */; };
 		355523791AD30174003992F5 /* Shark.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523781AD30174003992F5 /* Shark.m */; };
 		355523841AD30282003992F5 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523831AD30282003992F5 /* SoundManager.m */; };
 		355523881AD30731003992F5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523871AD30731003992F5 /* MenuViewController.m */; };
@@ -37,6 +41,11 @@
 		3555239E1AD31E4A003992F5 /* Trash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555239D1AD31E4A003992F5 /* Trash.m */; };
 		35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6FDCD1AD325120049A354 /* FundoTEST.png */; };
 		35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6FDD31AD32E130049A354 /* FundoTEST-2.png */; };
+		35F49E1E1AD5B72100AE8524 /* Joystick1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E1C1AD5B72100AE8524 /* Joystick1.png */; };
+		35F49E1F1AD5B72100AE8524 /* Joystick2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E1D1AD5B72100AE8524 /* Joystick2.png */; };
+		35F49E211AD5B7C500AE8524 /* Linha.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E201AD5B7C500AE8524 /* Linha.png */; };
+		35F49E231AD5B87B00AE8524 /* Anzol.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E221AD5B87B00AE8524 /* Anzol.png */; };
+		35F49E291AD5BC2F00AE8524 /* Pneu.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E281AD5BC2F00AE8524 /* Pneu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +70,12 @@
 		3544D7401AD5A514001BC232 /* JCJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCJoystick.m; sourceTree = "<group>"; };
 		3544D7431AD5A599001BC232 /* redStick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redStick.png; sourceTree = "<group>"; };
 		3544D7441AD5A599001BC232 /* stickbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickbase.png; sourceTree = "<group>"; };
+		3544D74A1AD5A884001BC232 /* Rope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rope.h; sourceTree = "<group>"; };
+		3544D74B1AD5A884001BC232 /* Rope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rope.m; sourceTree = "<group>"; };
+		3544D74D1AD5A8D6001BC232 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		3544D74E1AD5A8D6001BC232 /* Branch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Branch.png; sourceTree = "<group>"; };
+		3544D74F1AD5A8D6001BC232 /* rope_ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rope_ring.png; sourceTree = "<group>"; };
+		3544D7531AD5B105001BC232 /* TelaInicial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TelaInicial.png; path = ../../../../Downloads/TelaInicial.png; sourceTree = "<group>"; };
 		3545C0D41AD2F80C00E6093D /* CleanupRevenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanupRevenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3545C0D81AD2F80C00E6093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3545C0D91AD2F80C00E6093D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,8 +94,6 @@
 		3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CleanupRevengeTests.m; sourceTree = "<group>"; };
 		355523711AD30099003992F5 /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		355523721AD30099003992F5 /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
-		355523741AD300CC003992F5 /* FishHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishHook.h; sourceTree = "<group>"; };
-		355523751AD300CC003992F5 /* FishHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FishHook.m; sourceTree = "<group>"; };
 		355523771AD30174003992F5 /* Shark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shark.h; sourceTree = "<group>"; };
 		355523781AD30174003992F5 /* Shark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shark.m; sourceTree = "<group>"; };
 		355523821AD30282003992F5 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
@@ -99,6 +112,11 @@
 		3555239D1AD31E4A003992F5 /* Trash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trash.m; sourceTree = "<group>"; };
 		35B6FDCD1AD325120049A354 /* FundoTEST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FundoTEST.png; sourceTree = "<group>"; };
 		35B6FDD31AD32E130049A354 /* FundoTEST-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FundoTEST-2.png"; sourceTree = "<group>"; };
+		35F49E1C1AD5B72100AE8524 /* Joystick1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joystick1.png; sourceTree = "<group>"; };
+		35F49E1D1AD5B72100AE8524 /* Joystick2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joystick2.png; sourceTree = "<group>"; };
+		35F49E201AD5B7C500AE8524 /* Linha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linha.png; sourceTree = "<group>"; };
+		35F49E221AD5B87B00AE8524 /* Anzol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Anzol.png; sourceTree = "<group>"; };
+		35F49E281AD5BC2F00AE8524 /* Pneu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pneu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +240,8 @@
 		355523801AD301E1003992F5 /* FishHook */ = {
 			isa = PBXGroup;
 			children = (
-				355523741AD300CC003992F5 /* FishHook.h */,
-				355523751AD300CC003992F5 /* FishHook.m */,
+				3544D74A1AD5A884001BC232 /* Rope.h */,
+				3544D74B1AD5A884001BC232 /* Rope.m */,
 			);
 			name = FishHook;
 			sourceTree = "<group>";
@@ -296,15 +314,24 @@
 		3555239A1AD31DB1003992F5 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				35F49E1C1AD5B72100AE8524 /* Joystick1.png */,
+				35F49E1D1AD5B72100AE8524 /* Joystick2.png */,
+				3544D74D1AD5A8D6001BC232 /* Ball.png */,
+				35F49E201AD5B7C500AE8524 /* Linha.png */,
+				3544D74E1AD5A8D6001BC232 /* Branch.png */,
+				3544D74F1AD5A8D6001BC232 /* rope_ring.png */,
 				3531B0DC1AD3201200DC088F /* Bota.png */,
 				35B6FDCD1AD325120049A354 /* FundoTEST.png */,
 				35B6FDD31AD32E130049A354 /* FundoTEST-2.png */,
+				35F49E281AD5BC2F00AE8524 /* Pneu.png */,
 				3531B0DE1AD3201200DC088F /* Garrafa.png */,
 				3531B0DF1AD3201200DC088F /* Lata.png */,
 				3531B0E01AD3201200DC088F /* Peixe1.png */,
+				3544D7531AD5B105001BC232 /* TelaInicial.png */,
 				3531B0E11AD3201200DC088F /* Sacola.png */,
 				3544D7431AD5A599001BC232 /* redStick.png */,
 				3544D7441AD5A599001BC232 /* stickbase.png */,
+				35F49E221AD5B87B00AE8524 /* Anzol.png */,
 			);
 			name = Imagens;
 			sourceTree = "<group>";
@@ -398,18 +425,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F49E211AD5B7C500AE8524 /* Linha.png in Resources */,
 				3545C0ED1AD2F80C00E6093D /* LaunchScreen.xib in Resources */,
+				3544D7541AD5B105001BC232 /* TelaInicial.png in Resources */,
+				35F49E291AD5BC2F00AE8524 /* Pneu.png in Resources */,
 				3545C0EA1AD2F80C00E6093D /* Images.xcassets in Resources */,
 				3531B0E41AD3201200DC088F /* Garrafa.png in Resources */,
 				3531B0E21AD3201200DC088F /* Bota.png in Resources */,
 				35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */,
+				3544D7521AD5A8D6001BC232 /* rope_ring.png in Resources */,
 				35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */,
 				3531B0E51AD3201200DC088F /* Lata.png in Resources */,
 				3544D7461AD5A599001BC232 /* stickbase.png in Resources */,
 				3545C0E21AD2F80C00E6093D /* GameScene.sks in Resources */,
+				35F49E1E1AD5B72100AE8524 /* Joystick1.png in Resources */,
 				3544D7451AD5A599001BC232 /* redStick.png in Resources */,
+				3544D7511AD5A8D6001BC232 /* Branch.png in Resources */,
+				3544D7501AD5A8D6001BC232 /* Ball.png in Resources */,
 				3531B0E61AD3201200DC088F /* Peixe1.png in Resources */,
 				3531B0E71AD3201200DC088F /* Sacola.png in Resources */,
+				35F49E231AD5B87B00AE8524 /* Anzol.png in Resources */,
+				35F49E1F1AD5B72100AE8524 /* Joystick2.png in Resources */,
 				3545C0E81AD2F80C00E6093D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +478,7 @@
 				3555238B1AD30D8A003992F5 /* ConfigViewController.m in Sources */,
 				3555239E1AD31E4A003992F5 /* Trash.m in Sources */,
 				3544D7411AD5A514001BC232 /* JCImageJoystick.m in Sources */,
-				355523761AD300CC003992F5 /* FishHook.m in Sources */,
+				3544D74C1AD5A884001BC232 /* Rope.m in Sources */,
 				355523911AD313B3003992F5 /* HistoricoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

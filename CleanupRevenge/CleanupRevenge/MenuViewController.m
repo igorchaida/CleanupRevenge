@@ -7,18 +7,15 @@
 //
 
 #import "MenuViewController.h"
+#import <SpriteKit/SpriteKit.h>
+
 
 @interface MenuViewController ()
-
+@property (nonatomic,strong)SKSpriteNode *background;
 @end
 
 @implementation MenuViewController
 
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
