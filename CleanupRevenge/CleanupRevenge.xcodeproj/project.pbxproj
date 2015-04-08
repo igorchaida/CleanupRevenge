@@ -14,6 +14,8 @@
 		3531B0E71AD3201200DC088F /* Sacola.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0E11AD3201200DC088F /* Sacola.png */; };
 		3544D7411AD5A514001BC232 /* JCImageJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3544D73E1AD5A514001BC232 /* JCImageJoystick.m */; };
 		3544D7421AD5A514001BC232 /* JCJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 3544D7401AD5A514001BC232 /* JCJoystick.m */; };
+		3544D7451AD5A599001BC232 /* redStick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D7431AD5A599001BC232 /* redStick.png */; };
+		3544D7461AD5A599001BC232 /* stickbase.png in Resources */ = {isa = PBXBuildFile; fileRef = 3544D7441AD5A599001BC232 /* stickbase.png */; };
 		3545C0DA1AD2F80C00E6093D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0D91AD2F80C00E6093D /* main.m */; };
 		3545C0DD1AD2F80C00E6093D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0DC1AD2F80C00E6093D /* AppDelegate.m */; };
 		3545C0E01AD2F80C00E6093D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0DF1AD2F80C00E6093D /* GameScene.m */; };
@@ -23,8 +25,6 @@
 		3545C0EA1AD2F80C00E6093D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3545C0E91AD2F80C00E6093D /* Images.xcassets */; };
 		3545C0ED1AD2F80C00E6093D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3545C0EB1AD2F80C00E6093D /* LaunchScreen.xib */; };
 		3545C0F91AD2F80C00E6093D /* CleanupRevengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */; };
-		35471C3D1AD4B7EC00119AD6 /* redStick.png in Resources */ = {isa = PBXBuildFile; fileRef = 35471C3B1AD4B7EC00119AD6 /* redStick.png */; };
-		35471C3E1AD4B7EC00119AD6 /* stickbase.png in Resources */ = {isa = PBXBuildFile; fileRef = 35471C3C1AD4B7EC00119AD6 /* stickbase.png */; };
 		355523731AD30099003992F5 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523721AD30099003992F5 /* Fish.m */; };
 		355523761AD300CC003992F5 /* FishHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523751AD300CC003992F5 /* FishHook.m */; };
 		355523791AD30174003992F5 /* Shark.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523781AD30174003992F5 /* Shark.m */; };
@@ -59,6 +59,8 @@
 		3544D73E1AD5A514001BC232 /* JCImageJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageJoystick.m; sourceTree = "<group>"; };
 		3544D73F1AD5A514001BC232 /* JCJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCJoystick.h; sourceTree = "<group>"; };
 		3544D7401AD5A514001BC232 /* JCJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCJoystick.m; sourceTree = "<group>"; };
+		3544D7431AD5A599001BC232 /* redStick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redStick.png; sourceTree = "<group>"; };
+		3544D7441AD5A599001BC232 /* stickbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickbase.png; sourceTree = "<group>"; };
 		3545C0D41AD2F80C00E6093D /* CleanupRevenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanupRevenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3545C0D81AD2F80C00E6093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3545C0D91AD2F80C00E6093D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		3545C0F21AD2F80C00E6093D /* CleanupRevengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanupRevengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3545C0F71AD2F80C00E6093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CleanupRevengeTests.m; sourceTree = "<group>"; };
-		35471C3B1AD4B7EC00119AD6 /* redStick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redStick.png; path = "../../../../Downloads/JCInput-master/JCInput/redStick.png"; sourceTree = "<group>"; };
-		35471C3C1AD4B7EC00119AD6 /* stickbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stickbase.png; path = "../../../../Downloads/JCInput-master/JCInput/stickbase.png"; sourceTree = "<group>"; };
 		355523711AD30099003992F5 /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		355523721AD30099003992F5 /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
 		355523741AD300CC003992F5 /* FishHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishHook.h; sourceTree = "<group>"; };
@@ -303,8 +303,8 @@
 				3531B0DF1AD3201200DC088F /* Lata.png */,
 				3531B0E01AD3201200DC088F /* Peixe1.png */,
 				3531B0E11AD3201200DC088F /* Sacola.png */,
-				35471C3B1AD4B7EC00119AD6 /* redStick.png */,
-				35471C3C1AD4B7EC00119AD6 /* stickbase.png */,
+				3544D7431AD5A599001BC232 /* redStick.png */,
+				3544D7441AD5A599001BC232 /* stickbase.png */,
 			);
 			name = Imagens;
 			sourceTree = "<group>";
@@ -405,9 +405,9 @@
 				35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */,
 				35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */,
 				3531B0E51AD3201200DC088F /* Lata.png in Resources */,
-				35471C3E1AD4B7EC00119AD6 /* stickbase.png in Resources */,
+				3544D7461AD5A599001BC232 /* stickbase.png in Resources */,
 				3545C0E21AD2F80C00E6093D /* GameScene.sks in Resources */,
-				35471C3D1AD4B7EC00119AD6 /* redStick.png in Resources */,
+				3544D7451AD5A599001BC232 /* redStick.png in Resources */,
 				3531B0E61AD3201200DC088F /* Peixe1.png in Resources */,
 				3531B0E71AD3201200DC088F /* Sacola.png in Resources */,
 				3545C0E81AD2F80C00E6093D /* Main.storyboard in Resources */,
