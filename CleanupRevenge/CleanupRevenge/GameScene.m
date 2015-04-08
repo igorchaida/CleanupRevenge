@@ -31,7 +31,6 @@
         _background.yScale = 0.5;
         [self addChild:_background];
         
-        //JCImageJoystic
         self.imageJoystick = [[JCImageJoystick alloc]initWithJoystickImage:(@"redStick.png") baseImage:@"stickbase.png"];
         [self.imageJoystick setPosition:CGPointMake(80, 70)];
         [self addChild:self.imageJoystick];
