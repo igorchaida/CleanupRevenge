@@ -21,6 +21,11 @@
 		3545C0EA1AD2F80C00E6093D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3545C0E91AD2F80C00E6093D /* Images.xcassets */; };
 		3545C0ED1AD2F80C00E6093D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3545C0EB1AD2F80C00E6093D /* LaunchScreen.xib */; };
 		3545C0F91AD2F80C00E6093D /* CleanupRevengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */; };
+		35471C381AD4B6DD00119AD6 /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35471C331AD4B6DD00119AD6 /* JCButton.m */; };
+		35471C391AD4B6DD00119AD6 /* JCJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 35471C351AD4B6DD00119AD6 /* JCJoystick.m */; };
+		35471C3A1AD4B6DD00119AD6 /* JCImageJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 35471C371AD4B6DD00119AD6 /* JCImageJoystick.m */; };
+		35471C3D1AD4B7EC00119AD6 /* redStick.png in Resources */ = {isa = PBXBuildFile; fileRef = 35471C3B1AD4B7EC00119AD6 /* redStick.png */; };
+		35471C3E1AD4B7EC00119AD6 /* stickbase.png in Resources */ = {isa = PBXBuildFile; fileRef = 35471C3C1AD4B7EC00119AD6 /* stickbase.png */; };
 		355523731AD30099003992F5 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523721AD30099003992F5 /* Fish.m */; };
 		355523761AD300CC003992F5 /* FishHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523751AD300CC003992F5 /* FishHook.m */; };
 		355523791AD30174003992F5 /* Shark.m in Sources */ = {isa = PBXBuildFile; fileRef = 355523781AD30174003992F5 /* Shark.m */; };
@@ -68,6 +73,14 @@
 		3545C0F21AD2F80C00E6093D /* CleanupRevengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanupRevengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3545C0F71AD2F80C00E6093D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3545C0F81AD2F80C00E6093D /* CleanupRevengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CleanupRevengeTests.m; sourceTree = "<group>"; };
+		35471C321AD4B6DD00119AD6 /* JCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCButton.h; path = "../../../../Downloads/JCInput-master/JCInput/JCButton.h"; sourceTree = "<group>"; };
+		35471C331AD4B6DD00119AD6 /* JCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCButton.m; path = "../../../../Downloads/JCInput-master/JCInput/JCButton.m"; sourceTree = "<group>"; };
+		35471C341AD4B6DD00119AD6 /* JCJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCJoystick.h; path = "../../../../Downloads/JCInput-master/JCInput/JCJoystick.h"; sourceTree = "<group>"; };
+		35471C351AD4B6DD00119AD6 /* JCJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCJoystick.m; path = "../../../../Downloads/JCInput-master/JCInput/JCJoystick.m"; sourceTree = "<group>"; };
+		35471C361AD4B6DD00119AD6 /* JCImageJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCImageJoystick.h; path = "../../../../Downloads/JCInput-master/JCInput/JCImageJoystick.h"; sourceTree = "<group>"; };
+		35471C371AD4B6DD00119AD6 /* JCImageJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCImageJoystick.m; path = "../../../../Downloads/JCInput-master/JCInput/JCImageJoystick.m"; sourceTree = "<group>"; };
+		35471C3B1AD4B7EC00119AD6 /* redStick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redStick.png; path = "../../../../Downloads/JCInput-master/JCInput/redStick.png"; sourceTree = "<group>"; };
+		35471C3C1AD4B7EC00119AD6 /* stickbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stickbase.png; path = "../../../../Downloads/JCInput-master/JCInput/stickbase.png"; sourceTree = "<group>"; };
 		355523711AD30099003992F5 /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		355523721AD30099003992F5 /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
 		355523741AD300CC003992F5 /* FishHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FishHook.h; sourceTree = "<group>"; };
@@ -186,6 +199,12 @@
 		355523701AD2FD16003992F5 /* Joystick */ = {
 			isa = PBXGroup;
 			children = (
+				35471C321AD4B6DD00119AD6 /* JCButton.h */,
+				35471C331AD4B6DD00119AD6 /* JCButton.m */,
+				35471C341AD4B6DD00119AD6 /* JCJoystick.h */,
+				35471C351AD4B6DD00119AD6 /* JCJoystick.m */,
+				35471C361AD4B6DD00119AD6 /* JCImageJoystick.h */,
+				35471C371AD4B6DD00119AD6 /* JCImageJoystick.m */,
 				35FA93001AD2FCAF003F80C1 /* Joystick.h */,
 				35FA93011AD2FCAF003F80C1 /* Joystick.m */,
 			);
@@ -294,6 +313,8 @@
 				3531B0DF1AD3201200DC088F /* Lata.png */,
 				3531B0E01AD3201200DC088F /* Peixe1.png */,
 				3531B0E11AD3201200DC088F /* Sacola.png */,
+				35471C3B1AD4B7EC00119AD6 /* redStick.png */,
+				35471C3C1AD4B7EC00119AD6 /* stickbase.png */,
 			);
 			name = Imagens;
 			sourceTree = "<group>";
@@ -394,7 +415,9 @@
 				35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */,
 				35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */,
 				3531B0E51AD3201200DC088F /* Lata.png in Resources */,
+				35471C3E1AD4B7EC00119AD6 /* stickbase.png in Resources */,
 				3545C0E21AD2F80C00E6093D /* GameScene.sks in Resources */,
+				35471C3D1AD4B7EC00119AD6 /* redStick.png in Resources */,
 				3531B0E61AD3201200DC088F /* Peixe1.png in Resources */,
 				3531B0E71AD3201200DC088F /* Sacola.png in Resources */,
 				3545C0E81AD2F80C00E6093D /* Main.storyboard in Resources */,
@@ -415,7 +438,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35471C3A1AD4B6DD00119AD6 /* JCImageJoystick.m in Sources */,
 				35FA93021AD2FCAF003F80C1 /* Joystick.m in Sources */,
+				35471C391AD4B6DD00119AD6 /* JCJoystick.m in Sources */,
 				3545C0E51AD2F80C00E6093D /* GameViewController.m in Sources */,
 				355523841AD30282003992F5 /* SoundManager.m in Sources */,
 				3545C0DD1AD2F80C00E6093D /* AppDelegate.m in Sources */,
@@ -429,6 +454,7 @@
 				3555238B1AD30D8A003992F5 /* ConfigViewController.m in Sources */,
 				3555239E1AD31E4A003992F5 /* Trash.m in Sources */,
 				355523761AD300CC003992F5 /* FishHook.m in Sources */,
+				35471C381AD4B6DD00119AD6 /* JCButton.m in Sources */,
 				355523911AD313B3003992F5 /* HistoricoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
