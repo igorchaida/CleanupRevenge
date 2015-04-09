@@ -55,8 +55,6 @@
         ropePart.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:ropePart.size.width];
         ropePart.physicsBody.allowsRotation = NO;
         ropePart.physicsBody.affectedByGravity = NO;
-        //        ropePart.physicsBody.collisionBitMask = 0.0;
-        //        ropePart.physicsBody.mass = 0.1;
         
         [self.scene addChild:ropePart];
         [_ropeParts addObject:ropePart];
@@ -66,9 +64,10 @@
         SKSpriteNode *object =  _attachedObject;
         //Pega o ultimo gomo da corrente
         SKNode *previous = [_ropeParts lastObject];
-        object.position = CGPointMake(previous.position.x, CGRectGetMaxY(previous.frame));
+        object.position = CGPointMake(previous.position.x, CGRectGetMaxY(previous.frame)-10);
         object.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:object.size.height/2];
         object.physicsBody.affectedByGravity = NO;
+        object.physicsBody.allowsRotation = NO;
         
         [self.scene addChild:object];
         [_ropeParts addObject:object];
