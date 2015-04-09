@@ -36,6 +36,10 @@
         [[SoundManager sharedManager] playMusic:@"Music.mp3" looping:YES];
 }
 
+-(IBAction)unwindToMenuViewController:(UIStoryboardSegue *)unwindSegue{
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     

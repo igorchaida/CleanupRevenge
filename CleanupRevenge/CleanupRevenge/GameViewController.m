@@ -41,12 +41,17 @@
         skView.showsNodeCount = YES;
         
         // Create and configure the scene.
-        SKScene * scene = [GameScene sceneWithSize:skView.bounds.size];
+        GameScene * scene = [GameScene sceneWithSize:skView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
+        scene.father = self;
         
         // Present the scene.
         [skView presentScene:scene];
     }
+}
+
+-(void)returnToMainMenu{
+    [self performSegueWithIdentifier:@"FromGameToMenu" sender:self];
 }
 
 - (BOOL)shouldAutorotate

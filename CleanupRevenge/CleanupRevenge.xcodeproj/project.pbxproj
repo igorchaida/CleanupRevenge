@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352DFAAB1AD71D71001F04F6 /* Range.png in Resources */ = {isa = PBXBuildFile; fileRef = 352DFAAA1AD71D71001F04F6 /* Range.png */; };
 		3531B0E21AD3201200DC088F /* Bota.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DC1AD3201200DC088F /* Bota.png */; };
 		3531B0E41AD3201200DC088F /* Garrafa.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DE1AD3201200DC088F /* Garrafa.png */; };
 		3531B0E51AD3201200DC088F /* Lata.png in Resources */ = {isa = PBXBuildFile; fileRef = 3531B0DF1AD3201200DC088F /* Lata.png */; };
@@ -42,7 +43,6 @@
 		3555239E1AD31E4A003992F5 /* Trash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3555239D1AD31E4A003992F5 /* Trash.m */; };
 		35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6FDCD1AD325120049A354 /* FundoTEST.png */; };
 		35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B6FDD31AD32E130049A354 /* FundoTEST-2.png */; };
-		35E6BF831AD6EAA60039ED5D /* Range.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E6BF821AD6EAA60039ED5D /* Range.png */; };
 		35F49E1E1AD5B72100AE8524 /* Joystick1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E1C1AD5B72100AE8524 /* Joystick1.png */; };
 		35F49E1F1AD5B72100AE8524 /* Joystick2.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E1D1AD5B72100AE8524 /* Joystick2.png */; };
 		35F49E211AD5B7C500AE8524 /* Linha.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F49E201AD5B7C500AE8524 /* Linha.png */; };
@@ -63,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352DFAAA1AD71D71001F04F6 /* Range.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Range.png; path = ../../../../Downloads/Range.png; sourceTree = "<group>"; };
 		3531B0DC1AD3201200DC088F /* Bota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bota.png; sourceTree = "<group>"; };
 		3531B0DE1AD3201200DC088F /* Garrafa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Garrafa.png; sourceTree = "<group>"; };
 		3531B0DF1AD3201200DC088F /* Lata.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lata.png; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		3555239D1AD31E4A003992F5 /* Trash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trash.m; sourceTree = "<group>"; };
 		35B6FDCD1AD325120049A354 /* FundoTEST.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FundoTEST.png; sourceTree = "<group>"; };
 		35B6FDD31AD32E130049A354 /* FundoTEST-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FundoTEST-2.png"; sourceTree = "<group>"; };
-		35E6BF821AD6EAA60039ED5D /* Range.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Range.png; path = "../../../../Downloads/CleanupRevenge 2/CleanupRevenge/CleanupRevenge/Range.png"; sourceTree = "<group>"; };
 		35F49E1C1AD5B72100AE8524 /* Joystick1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joystick1.png; sourceTree = "<group>"; };
 		35F49E1D1AD5B72100AE8524 /* Joystick2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Joystick2.png; sourceTree = "<group>"; };
 		35F49E201AD5B7C500AE8524 /* Linha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Linha.png; sourceTree = "<group>"; };
@@ -323,11 +323,11 @@
 		3555239A1AD31DB1003992F5 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
-				35E6BF821AD6EAA60039ED5D /* Range.png */,
 				35F49E2E1AD5C3BF00AE8524 /* TelaGaleria.png */,
 				35F49E2C1AD5BDD900AE8524 /* Barril.png */,
 				35F49E1C1AD5B72100AE8524 /* Joystick1.png */,
 				35F49E1D1AD5B72100AE8524 /* Joystick2.png */,
+				352DFAAA1AD71D71001F04F6 /* Range.png */,
 				3544D74D1AD5A8D6001BC232 /* Ball.png */,
 				35F49E201AD5B7C500AE8524 /* Linha.png */,
 				3544D74E1AD5A8D6001BC232 /* Branch.png */,
@@ -442,13 +442,13 @@
 				35524EE31AD5C97000A98E21 /* Music.mp3 in Resources */,
 				3544D7541AD5B105001BC232 /* TelaInicial.png in Resources */,
 				35F49E291AD5BC2F00AE8524 /* Pneu.png in Resources */,
+				352DFAAB1AD71D71001F04F6 /* Range.png in Resources */,
 				3545C0EA1AD2F80C00E6093D /* Images.xcassets in Resources */,
 				35F49E2F1AD5C3BF00AE8524 /* TelaGaleria.png in Resources */,
 				3531B0E41AD3201200DC088F /* Garrafa.png in Resources */,
 				3531B0E21AD3201200DC088F /* Bota.png in Resources */,
 				35B6FDD41AD32E130049A354 /* FundoTEST-2.png in Resources */,
 				3544D7521AD5A8D6001BC232 /* rope_ring.png in Resources */,
-				35E6BF831AD6EAA60039ED5D /* Range.png in Resources */,
 				35B6FDCE1AD325120049A354 /* FundoTEST.png in Resources */,
 				3531B0E51AD3201200DC088F /* Lata.png in Resources */,
 				3544D7461AD5A599001BC232 /* stickbase.png in Resources */,

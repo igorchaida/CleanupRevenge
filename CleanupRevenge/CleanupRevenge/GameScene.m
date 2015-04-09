@@ -22,14 +22,19 @@
 @property (nonatomic) bool isAligned;
 @property (nonatomic)SKSpriteNode *range;
 @property (nonatomic)SKSpriteNode *range2;
+@property (nonatomic)SKSpriteNode *anzol;
+@property (nonatomic)SKSpriteNode *anzol2;
 @property (nonatomic)NSMutableArray *objectsInCene;
+@property (nonatomic) UIAlertView *alert;
 
 @end
 
 int countTrash = 0;
+int i = 1;
 @implementation GameScene
 
--(id)initWithSize:(CGSize)size {
+-(id)initWithSize:(CGSize)size
+{
     if (self = [super initWithSize:size]) {
         
         _background = [SKSpriteNode spriteNodeWithImageNamed:@"FundoTEST-2.png"];
@@ -50,19 +55,18 @@ int countTrash = 0;
         sprite.yScale = 0.22;
         //        sprite.position = CGPointMake(CGRectGetMidX(self.frame)*1.5,
         //                                             CGRectGetMidY(self.frame));
+     
         sprite.position = CGPointMake(300, 150);
-        [super addChild:sprite];
-        [self buildScene];
-        
         _playerMove = true;
         _isAligned = true;
-        
-        
+        [super addChild:sprite];
+        [self buildScene];
     }
     return self;
 }
 
--(void)update:(CFTimeInterval)currentTime {
+-(void)update:(CFTimeInterval)currentTime
+{
     
     if(_playerMove==true){
         [self.sprite setPosition:CGPointMake(self.sprite.position.x+self.imageJoystick.x*3, self.sprite.position.y+self.imageJoystick.y*3)];
@@ -80,15 +84,9 @@ int countTrash = 0;
     
 }
 
--(void) buildScene {
-    
-    //    //Coloca fisica no ambiente inteiro (tamanha da tela)
-    //    SKNode *edge = [SKNode new];
-    //    edge.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
-    //    //    edge.physicsBody.mass = 0.1;
-    //    [self addChild:edge];
-    
-    //Cria o tronco de arvore, com posicao e fisica
+-(void) buildScene
+{
+
     SKSpriteNode *branch = [SKSpriteNode spriteNodeWithImageNamed:@"Branch"];
     branch.name = @"FIXACAOANZOL1";
     branch.position = CGPointMake(CGRectGetMaxX(self.frame) - branch.size.width / 2,
@@ -107,10 +105,10 @@ int countTrash = 0;
     [self addChild:branch];
     
     //Cria a bola, no nosso caso sera o anzol
-    SKSpriteNode *anzol = [SKSpriteNode spriteNodeWithImageNamed:@"Anzol"];
-    anzol.name = @"ANZOL";
-    SKSpriteNode *anzol2 = [SKSpriteNode spriteNodeWithImageNamed:@"Anzol"];
-    anzol2.name = @"ANZOL2";
+    _anzol = [SKSpriteNode spriteNodeWithImageNamed:@"Anzol"];
+    _anzol.name = @"ANZOL";
+    _anzol2 = [SKSpriteNode spriteNodeWithImageNamed:@"Anzol"];
+    _anzol2.name = @"ANZOL2";
     
     Rope *rope = [Rope new];
     [self addChild:rope];
@@ -125,9 +123,9 @@ int countTrash = 0;
     [rope2 setAttachmentPoint:ropeAttachPos2 toNode:branch];
     
     // This now actually creates physics body. Not ideal but good for the demo.
-    [rope attachObject:anzol];
+    [rope attachObject:_anzol];
     
-    [rope2 attachObject:anzol2];
+    [rope2 attachObject:_anzol2];
     
     // Setting lenght actually also builds the rope. For production, have own method for building rope.
     //define o tamanho do anzol
@@ -136,13 +134,13 @@ int countTrash = 0;
     
     //CRIA O RANGE DA ISCA
     self.range = [SKSpriteNode spriteNodeWithImageNamed:@"Range"];
-    self.range.position = anzol.position;
+    self.range.position = _anzol.position;
     self.range.name = @"RANGE";
     [self addChild:_range];
     
     //CRIA O RANGE DA ISCA2
     self.range2 = [SKSpriteNode spriteNodeWithImageNamed:@"Range"];
-    self.range2.position = anzol2.position;
+    self.range2.position = _anzol2.position;
     self.range2.name = @"RANGE2";
     [self addChild:_range2];
     
@@ -273,7 +271,6 @@ int countTrash = 0;
     
 }
 
-
 -(void)checkCollision
 {
     SKNode *jogador = [self childNodeWithName:@"JOGADOR"];
@@ -281,53 +278,65 @@ int countTrash = 0;
     SKNode *range2 = [self childNodeWithName:@"RANGE2"];
     SKNode *anzol = [self childNodeWithName:@"ANZOL"];
     SKNode *anzol2 = [self childNodeWithName:@"ANZOL2"];
+    SKNode *lixo = [self childNodeWithName:@"LIXO"];
     
-    //    NSLog(@"\nLixo em cena: %d", self.objectsInCene.count);
     
-    if(self.objectsInCene!=nil){//NAO ESTA ENTRANDO NESSA FUNCAO
-        SKNode *lixo = [self childNodeWithName:@"LIXO"];
-        if([jogador intersectsNode:lixo]){
-            [self fimDeJogo:jogador withObject:lixo];
-        }
-        else if([anzol intersectsNode:lixo]){
-            [self marcaPontos:anzol withObject:lixo];
-        }
-        else if([anzol2 intersectsNode:lixo]){
-            [self marcaPontos:anzol2 withObject:lixo];
-        }
-    }
     if([jogador intersectsNode:range]){
-        
         [self moveAnzol:range withPlayer:jogador];
+    }else{
+        SKAction *backToOrigin = [SKAction moveTo:CGPointMake(117, 170) duration:1];
+        [range runAction:backToOrigin];
+        [anzol runAction:backToOrigin];
     }
     if([jogador intersectsNode:range2]){
         [self moveAnzol:range2 withPlayer:jogador];
-    }
-    else{
-        //        SKNode *anzol = [self childNodeWithName:@"ANZOL"];
-        SKAction *backToOrigin = [SKAction moveTo:CGPointMake(117, 170) duration:0.1];
-        [range runAction:backToOrigin];
-        [anzol runAction:backToOrigin];
-        SKAction *backToOrigin2 = [SKAction moveTo:CGPointMake(567, 170) duration:0.1];
+    }else{
+        SKAction *backToOrigin2 = [SKAction moveTo:CGPointMake(567, 170) duration:1];
         [range2 runAction:backToOrigin2];
         [anzol2 runAction:backToOrigin2];
     }
     
-    [self fishIsDead:anzol withPlayer:jogador];
-    [self fishIsDead:anzol2 withPlayer:jogador];
+    for(SKSpriteNode *j in self.children){ //{//NAO ESTA ENTRANDO NESSA FUNCAO
+        if([j.name isEqualToString:@"LIXO"]){
+            if([jogador intersectsNode:j]){
+                [self fimDeJogo:jogador withObject:j];
+            }
+            else if([anzol intersectsNode:lixo]){
+                [self marcaPontos:anzol withObject:j];
+            }
+            else if([anzol2 intersectsNode:lixo]){
+                [self marcaPontos:anzol2 withObject:j];
+            }
+        }
+    }
     
+    if(_playerMove == false && i == 1){
+        
+                i = 0;
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over"
+                                                                message:@"Você perdeu" delegate:self cancelButtonTitle:@"Cancelar"
+                                                      otherButtonTitles:@"Reiniciar", nil];
+                [alert show];
+                [alert reloadInputViews];
+        
+            }
+            if(_playerMove == true){
+                [self fishIsDead:anzol withPlayer:jogador];
+                [self fishIsDead:anzol2 withPlayer:jogador];
+                
+                i = 1;
+            }
+
     
 }
 
 //COLISAO COM O LIXO FIM DE JOGO - OBS: COM PROBLEMAS
--(void)fimDeJogo:(SKNode *)player withObject: (SKNode *)objetc
+-(void)fimDeJogo:(SKNode *)player withObject: (SKNode *)object
 {
-    for(SKNode *i in self.objectsInCene){
-        if([self isColliding:player withObject:i]){
+        if([self isColliding:player withObject:object]){
             _playerMove = false;
             //CHAMAR TELA OPCOES PARA RECOMECAR O JOGO
         }
-    }
 }
 
 //COLISAO COM O LIXO E O ANZOL
@@ -345,7 +354,6 @@ int countTrash = 0;
         _playerMove = false;
     }
 }
-
 
 //MOVIMENTO O ANZOL
 -(void)moveAnzol:(SKNode *)range0 withPlayer: (SKNode *)player
@@ -406,7 +414,6 @@ int countTrash = 0;
     
 }
 
-
 //VERIFICA ALINHAMENTO DO RANGE DO ANZOL COM O ANZOL (OBS: COM PROBLEMAS)
 -(Boolean)checkAlign:(SKNode*)anzol withRange: (SKNode *)range{
     
@@ -429,14 +436,15 @@ int countTrash = 0;
 -(Boolean)isColliding:(SKNode *)object1 withObject: (SKNode *)objetc2
 {
     float distX = object1.position.x - objetc2.position.x;
+   
     float distY = object1.position.y - objetc2.position.y;
     float distX2 = distX;
     float distY2 = distY;
     if(distY2<0){ distY2 = distY2*-1; }
     if(distX2<0){ distX2 = distX2*-1; }
     
-    float catOp = powf(distY, 2);
-    float catAdj = powf(distX, 2);
+    float catOp = powf(distY2, 2);
+    float catAdj = powf(distX2, 2);
     float somaRaios = object1.frame.size.height/4+objetc2.frame.size.height/4;
     
     float hip = sqrtf((catOp+catAdj));
@@ -447,6 +455,46 @@ int countTrash = 0;
     
     return false;
     
+}
+
+-(void) inicializar
+{
+    i = 1;
+    
+    _playerMove = true;
+    self.sprite.xScale = 0.22;
+    self.sprite.yScale = 0.22;
+    self.sprite.position = CGPointMake(300, 150);
+
+    SKAction *backToOrigin = [SKAction moveTo:CGPointMake(117, 170) duration:0.01];
+    [_range runAction:backToOrigin];
+    [_anzol runAction:backToOrigin];
+
+    SKAction *backToOrigin2 = [SKAction moveTo:CGPointMake(567, 170) duration:0.01];
+    [_range2 runAction:backToOrigin2];
+    [_anzol2 runAction:backToOrigin2];
+}
+
+-(void)callUnwind
+{
+    [self removeAllActions];
+    [self removeAllChildren];
+    [_father returnToMainMenu];
+    
+    _father = nil;
+
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0)
+    {
+        [self callUnwind];
+    }
+    else if(buttonIndex == 1)
+    {
+        [self inicializar];
+    }
 }
 
 @end

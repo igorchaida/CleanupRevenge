@@ -7,8 +7,15 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "MenuViewController.h"
+#import "GameViewController.h"
 
-@interface GameScene : SKScene
+
+@class GameViewController;
+@interface GameScene : SKScene <UIAlertViewDelegate> 
 @property (nonatomic) NSTimeInterval lastTrashTimeInterval;
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
+
+@property (weak, nonatomic) GameViewController* father;
+
 @end

@@ -11,4 +11,8 @@
 
 @interface GameViewController : UIViewController
 
+
+-(void)returnToMainMenu;
+
+
 @end
